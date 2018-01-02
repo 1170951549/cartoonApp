@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no" />	
+		<title>书架</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/book.css" />
+	</head>
+	<body>
+		<!--最顶部-->
+		<header class="top-box">
+			<a href="javascript:history.go(-1)" class="top-fh"></a>
+			<h1>书架</h1>
+			<a href="javascript:;" class="top-btn top-btn1">菜单</a>
+			<a href="SE.html" class="top-btn top-btn2">搜索</a>
+		</header>
+		<!--顶部菜单-->
+		<div class="top-menu-box">
+			<div class="top-menu-bg"></div>
+			<div class="top-menu">
+				<ul class="top-menu-list">
+					<li>
+						<a href="index.html">
+							<i class="icon-index"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="book.html">
+							<i class="icon-collect"></i>
+							<span>收藏</span>
+						</a>
+					</li>
+					<li>
+						<a href="book.html">
+							<i class="icon-history"></i>
+							<span>历史</span>
+						</a>
+					</li>
+					<li>
+						<a href="classify.html">
+							<i class="icon-classify"></i>
+							<span>分类</span>
+						</a>
+					</li>
+					<li>
+						<a href="ranking.html">
+							<i class="icon-rank"></i>
+							<span>排行</span>
+						</a>
+					</li>
+					<li>
+						<a href="chaseUp.html">
+							<i class="icon-time"></i>
+							<span>追更</span>
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="home">个人中心</a>
+			</div>
+		</div>
+		<!--收藏历史切换-->
+		<section class="book-tab-box">
+			<a href="javascript:;" class="book-tab-box-a-active">收藏</a>
+			<a href="javascript:;">历史</a>
+		</section>
+		<!--收藏-->
+		<div class="book-con book-collect-box">
+			<!--未登录状态-->
+			<section class="collect-noLoad">
+				<div class="collect-noLoad-top">
+					<img src="images/unload-girl.png" />
+					<p>大人，快快登录，<br/>同步云书架，漫画们等着你哦</p>
+					<a href="javascript:;">登录</a>
+				</div>
+				<div class="collect-noLoad-list">
+					<h2>大家都在搜</h2>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="images/book01.jpg"/>
+								<p>
+									<strong>再世为妖</strong>
+									<span>怀揣着征服世界梦</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/book02.jpg"/>
+								<p>
+									<strong>茶楼浮生梦</strong>
+									<span>这位温润出尘的绝</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/book03.jpg"/>
+								<p>
+									<strong>死囚直播</strong>
+									<span>如果你能拯救一个人将死之人</span>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!--历史-->
+		<div class="book-con book-history-box">
+			<!--未登录状态-->
+			<section class="collect-noLoad">
+				<div class="collect-noLoad-top">
+					<img src="images/empty2-girl.png" />
+					<p>空空如也，您这样真的好吗</p>
+					<a href="javascript:;">漫画书城</a>
+				</div>
+				<div class="collect-noLoad-list">
+					<h2>大家都在搜</h2>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="images/book01.jpg"/>
+								<p>
+									<strong>再世为妖</strong>
+									<span>怀揣着征服世界梦</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/book02.jpg"/>
+								<p>
+									<strong>茶楼浮生梦</strong>
+									<span>这位温润出尘的绝</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/book03.jpg"/>
+								<p>
+									<strong>死囚直播</strong>
+									<span>如果你能拯救一个人将死之人</span>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/book.js" ></script>
+<script>
+	$(".book-tab-box a").on("touchend",function(e){
+		e.preventDefault();//阻止默认事件
+		$(".book-tab-box a").removeClass("book-tab-box-a-active");
+		$(this).addClass("book-tab-box-a-active");
+		
+		$(".book-con").hide();
+		$(".book-con").eq($(".book-tab-box a").index($(this))).show();
+	})
+</script>

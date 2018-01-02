@@ -1,0 +1,26 @@
+[
+	{
+		"id":"1",
+		"img":"animation01.jpg",
+		"name":"降灵记",
+		"up":"16集"
+	},
+	{
+		"id":"2",
+		"img":"animation02.jpg",
+		"name":"枪娘",
+		"up":"12集"
+	},
+	{
+		"id":"3",
+		"img":"animation03.jpg",
+		"name":"时空使徒",
+		"up":"12集"
+	},
+	{
+		"id":"4",
+		"img":"animation04.jpg",
+		"name":"银之守墓人",
+		"up":"23集"
+	}
+]

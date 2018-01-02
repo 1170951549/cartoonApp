@@ -1,0 +1,320 @@
+/*头部*/
+.top-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 2rem;
+	-webkit-box-shadow: 0 0 0.125rem rgba(9, 2, 4, 0.06);
+	box-shadow: 0 0 0.125rem rgba(9, 2, 4, 0.06);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+.top-box h1{
+	float: left;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	color: #535252;
+}
+.top-fh{
+	display: block;
+	float: left;
+	width: 1.5rem;
+	height: 2rem;
+	background: url(../images/sc_img_default.png)no-repeat -3rem -3.8rem;
+	background-size: 11.84rem 5.6rem;
+}
+.top-btn {
+	display: block;
+	float: right;
+	margin-top: 0.1rem;
+	padding: 0.3rem;
+	width: 1rem;
+	height: 1rem;
+	/*background: url(images/sc_img_default.png)no-repeat  -5.4rem -4.2rem;*/
+	background-size: 11.8rem 6rem;
+	font-size: 0;
+}
+
+.top-btn1 {
+	background: url(../images/sc_img_default.png)no-repeat -4.1rem -4.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.top-btn2 {
+	background: url(../images/sc_img_default.png)no-repeat -5.4rem -4.2rem;
+	background-size: 11.8rem 6rem;
+}
+/*导航菜单*/
+
+.top-menu-box {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	/*-webkit-transition: all 0.3s;
+		transition: all 0.3s;*/
+}
+
+.top-menu-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	/*-webkit-transition: all 2s;
+	transition: all 2s;*/
+	/*opacity: 0;*/
+}
+
+.top-menu {
+	position: relative;
+	width: 100%;
+	padding-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #ff9a6a;
+	background-color: #F5F5EE;
+	/*-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);*/
+}
+
+.top-menu-list {
+	padding: 0.1rem 0;
+	overflow: hidden;
+}
+
+.top-menu-list li {
+	float: left;
+	margin-right: 4%;
+	margin-left: 1.3%;
+	width: 28%;
+	text-align: center;
+}
+
+.top-menu-list li a {
+	display: inline-block;
+	height: 2.5rem;
+}
+
+.top-menu-list li a i,
+.ban-menuList li a i {
+	display: block;
+	width: 1.45rem;
+	height: 1.4rem;
+}
+
+.icon-index {
+	background: url(../images/sc_img_default.png)no-repeat -8.05rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-collect {
+	background: url(../images/sc_img_default.png)no-repeat -9.55rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-history {
+	background: url(../images/sc_img_default.png)no-repeat -4.94rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-classify {
+	background: url(../images/sc_img_default.png)no-repeat -1.48rem -4.51rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-rank {
+	background: url(../images/sc_img_default.png)no-repeat 0.05rem -4.51rem;
+	background-size: 11.8rem 6rem;
+}
+
+.top-menu-list li a span,
+.ban-menuList li span {
+	display: block;
+	font-size: 0.5rem;
+}
+
+.icon-time {
+	background: url(../images/sc_img_default.png)no-repeat -6.45rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-dog {
+	background: url(../images/sc_img_index.png)no-repeat -11.8rem -4.84rem;
+	background-size: 16.4rem 14rem;
+}
+
+.home {
+	display: block;
+	margin: 0 auto;
+	width: 11.84rem;
+	height: 1.9rem;
+	background: url(../images/sc_img_default.png)no-repeat -0rem -0rem;
+	background-size: 11.8rem 6rem;
+	font-size: 0;
+}
+/*切换*/
+.ranking-tab-box{
+	margin-top: 2rem;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.ranking-tab-box ul{
+	width: 100%;
+	overflow: hidden;
+}
+.ranking-tab-box ul li{
+	float: left;
+	text-align: center;
+	width: 25%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+	color: #969696;
+}
+.ranking-tab-box ul li a{
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+}
+.ranking-tab-box-active{
+	border-bottom:0.2rem solid #ff9a6a;
+}
+/*象征图片*/
+.ranking-token{
+	width: 100%;
+}
+.rank-token-list{
+	display:none;
+	padding: 1rem 0;
+	align-items: flex-end;/*上下居中*/
+	justify-content: center;/*左右*/
+	background: url(../images/rank-banner-bg.png)no-repeat center bottom;
+	background-size: 100% auto;
+	overflow: hidden;
+}
+.rank-token-list-active{
+	display: flex;
+	align-items: flex-end;/*上下居中*/
+	justify-content: center;/*左右*/
+}
+.rank-token-list
+.rank-token-list a{
+	display: block;
+	float: left;
+}
+.rank-token-list a span{
+	display: block;
+	font-size: 0.5rem;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.rank-token-list a strong{
+	display: block;
+	font-size: 0.7rem;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.rank-token-list a:nth-of-type(1){
+	width: 3.5rem;
+	background-color: #ffa755;
+}
+.rank-token-list a:nth-of-type(1) img{
+	display: block;
+	width: 3.5rem;
+	height: 4.6rem;
+}
+.rank-token-list a:nth-of-type(2){
+	margin: 0 0.8rem;
+	width: 4.2rem;
+	background-color: #e86a3e;
+}
+.rank-token-list a:nth-of-type(2) img{
+	display: block;
+	width: 4.2rem;
+	height: 5.7rem;
+}
+.rank-token-list a:nth-of-type(3){
+	width: 3.5rem;
+	background-color: #ffa755;
+}
+.rank-token-list a:nth-of-type(3) img{
+	display: block;
+	width: 3.5rem;
+	height: 4.6rem;
+}
+/*列表*/
+.rank-con-list{
+	margin-top: 0.5rem;
+	width: 100%;
+}
+.rank-con-list{
+	display: none;
+}
+.rank-con-list-active{
+	display: block;
+}
+.rank-con-list ul{
+	padding: 0.2rem;
+}
+.rank-con-list ul li{
+	width: 100%;
+	background-color: #FFFFFF;
+	border-bottom: 0.3rem solid #F5F5EE;
+}
+.rank-con-list ul li a{
+	position: relative;
+	display: block;
+	padding: 0.15rem;
+	overflow: hidden;
+}
+.rank-conList-img{
+	float: left;
+	margin-right: 0.2rem;
+	width: 2.8rem;
+	height: 3.68rem;
+}
+.rank-conList-img img{
+	width: 100%;
+	height: 100%;
+}
+.rank-conList-text{
+	
+}
+.rank-conList-text i{
+	position: absolute;
+	right: 0.4rem;
+	top: 0.4rem;
+	font-size: 0.9rem;
+	color: #C5C5C5;
+}
+.rank-conList-text strong{
+	display: block;
+	font-size: 0.7rem;
+	color: #535252;
+}
+.rank-conList-text span{
+	display: block;
+	line-height: 0.9rem;
+	font-size: 0.5rem;
+	color: #969696;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

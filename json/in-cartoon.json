@@ -1,0 +1,20 @@
+[
+	{
+		"id":"1",
+		"name":"真实账号",
+		"clas":"热血 冒险 科幻",
+		"img":"in-cartoon01.jpg"
+	},
+	{
+		"id":"2",
+		"name":"七人传奇",
+		"clas":"热血 冒险 玄幻",
+		"img":"in-cartoon02.jpg"
+	},
+	{
+		"id":"3",
+		"name":"干物妹！小埋",
+		"clas":"爆笑 萌系 生活",
+		"img":"in-cartoon03.jpg"
+	}
+]

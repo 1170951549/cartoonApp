@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no" />	
+		<title>搜索</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/SE.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<section class="SE-top-box">
+			<form class="SE-top-form">
+				<a href="javascript:history.go(-1)"></a>
+				<div class="SE-top-text">
+					<input type="text"/>
+					<em>漫画名|作者</em>
+				</div>
+				<input type="submit" value="搜索" class="SE-top-sub"/>
+			</form>
+		</section>
+		<!--热搜关键字-->
+		<section class="search-box">
+			<div class="search-top">
+				<i></i>
+				<span>大家都在搜</span>
+			</div>
+			<ul class="search-list">
+				<li>
+					<a href="javascript:;">妖怪名单</a>
+				</li>
+				<li>
+					<a href="javascript:;">妖狐小红娘</a>
+				</li>
+				<li>
+					<a href="javascript:;">猫妖的诱惑</a>
+				</li>
+				<li>
+					<a href="javascript:;">我的天劫女友</a>
+				</li>
+				<li>
+					<a href="javascript:;">一人之下</a>
+				</li>
+				<li>
+					<a href="javascript:;">谪仙录之太平青领书</a>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/SE.js" ></script>
+<script>
+	$(".SE-top-text input").on("focus",function(e){
+		e.preventDefault();//阻止默认事件
+		$(".SE-top-text em").hide();
+	})
+</script>

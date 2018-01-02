@@ -1,0 +1,20 @@
+[
+	{
+		"id":"1",
+		"name":"分裂男神",
+		"clas":"都市 恋爱 奇幻",
+		"img":"in-newWork01.jpg"
+	},
+	{
+		"id":"2",
+		"name":"仙道魔侠",
+		"clas":"热血 冒险 穿越",
+		"img":"in-newWork02.jpg"
+	},
+	{
+		"id":"3",
+		"name":"荒岛法则",
+		"clas":"爆笑 冒险",
+		"img":"in-newWork03.jpg"
+	}
+]

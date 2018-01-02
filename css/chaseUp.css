@@ -1,0 +1,252 @@
+/*头部*/
+.top-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 2rem;
+	-webkit-box-shadow: 0 0 0.125rem rgba(9, 2, 4, 0.06);
+	box-shadow: 0 0 0.125rem rgba(9, 2, 4, 0.06);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+.top-box h1{
+	float: left;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	color: #535252;
+}
+.top-fh{
+	display: block;
+	float: left;
+	width: 1.5rem;
+	height: 2rem;
+	background: url(../images/sc_img_default.png)no-repeat -3rem -3.8rem;
+	background-size: 11.84rem 5.6rem;
+}
+.top-btn {
+	display: block;
+	float: right;
+	margin-top: 0.1rem;
+	padding: 0.3rem;
+	width: 1rem;
+	height: 1rem;
+	/*background: url(images/sc_img_default.png)no-repeat  -5.4rem -4.2rem;*/
+	background-size: 11.8rem 6rem;
+	font-size: 0;
+}
+
+.top-btn1 {
+	background: url(../images/sc_img_default.png)no-repeat -4.1rem -4.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.top-btn2 {
+	background: url(../images/sc_img_default.png)no-repeat -5.4rem -4.2rem;
+	background-size: 11.8rem 6rem;
+}
+/*导航菜单*/
+
+.top-menu-box {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	/*-webkit-transition: all 0.3s;
+		transition: all 0.3s;*/
+}
+
+.top-menu-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	/*-webkit-transition: all 2s;
+	transition: all 2s;*/
+	/*opacity: 0;*/
+}
+
+.top-menu {
+	position: relative;
+	width: 100%;
+	padding-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #ff9a6a;
+	background-color: #F5F5EE;
+	/*-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);*/
+}
+
+.top-menu-list {
+	padding: 0.1rem 0;
+	overflow: hidden;
+}
+
+.top-menu-list li {
+	float: left;
+	margin-right: 4%;
+	margin-left: 1.3%;
+	width: 28%;
+	text-align: center;
+}
+
+.top-menu-list li a {
+	display: inline-block;
+	height: 2.5rem;
+}
+
+.top-menu-list li a i,
+.ban-menuList li a i {
+	display: block;
+	width: 1.45rem;
+	height: 1.4rem;
+}
+
+.icon-index {
+	background: url(../images/sc_img_default.png)no-repeat -8.05rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-collect {
+	background: url(../images/sc_img_default.png)no-repeat -9.55rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-history {
+	background: url(../images/sc_img_default.png)no-repeat -4.94rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-classify {
+	background: url(../images/sc_img_default.png)no-repeat -1.48rem -4.51rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-rank {
+	background: url(../images/sc_img_default.png)no-repeat 0.05rem -4.51rem;
+	background-size: 11.8rem 6rem;
+}
+
+.top-menu-list li a span,
+.ban-menuList li span {
+	display: block;
+	font-size: 0.5rem;
+}
+
+.icon-time {
+	background: url(../images/sc_img_default.png)no-repeat -6.45rem -2.2rem;
+	background-size: 11.8rem 6rem;
+}
+
+.icon-dog {
+	background: url(../images/sc_img_index.png)no-repeat -11.8rem -4.84rem;
+	background-size: 16.4rem 14rem;
+}
+
+.home {
+	display: block;
+	margin: 0 auto;
+	width: 11.84rem;
+	height: 1.9rem;
+	background: url(../images/sc_img_default.png)no-repeat -0rem -0rem;
+	background-size: 11.8rem 6rem;
+	font-size: 0;
+}
+/*星期切换*/
+.week-tab-box{
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: 2rem;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.week-tab-box ul{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	width: 100%;
+	overflow: hidden;
+}
+.week-tab-box ul li{
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	float: left;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 0.5rem;
+	text-align: center;
+}
+.week-tab-box ul li a{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	color: #969696;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.week-tab-box-active{
+	border-bottom: 0.2rem solid #ff9a6a;
+}
+/*星期列表*/
+.week-list-box{
+	margin-top: 4rem;
+	width: 100%;
+	overflow: hidden;
+}
+.week-list{
+	display: none;
+	width: 100%;
+	overflow: hidden;
+	background-color: #F5F5EE;
+}
+.week-list ul{
+	padding: 0.2rem;
+}
+.week-list li{
+	width: 100%;
+	border-bottom: 0.3rem solid #F5F5EE;
+	background-color: #FFFFFF;
+}
+.week-list li a{
+	display: block;
+	padding: 0.15rem;
+	overflow: hidden;
+}
+
+.week-list-img{
+	float: left;
+    margin-right: 0.3rem;
+    width: 2.8rem;
+    height: 3.68rem
+}
+.week-list-img img{
+	width: 100%;
+	height: 100%;
+}
+.week-list-text strong{
+	display: block;
+	margin-top: 0.4rem;
+    font-size: 0.7rem;
+    color: #535252;
+}
+.week-list-text span{
+	display: block;
+    line-height: 0.9rem;
+    font-size: 0.5rem;
+    color: #969696;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

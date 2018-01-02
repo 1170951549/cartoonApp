@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+		<title>排行</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/ranking.css" />
+	</head>
+	<body>
+		<!--最顶部-->
+		<header class="top-box">
+			<a href="javascript:history.go(-1)" class="top-fh"></a>
+			<h1>排行榜</h1>
+			<a href="javascript:;" class="top-btn top-btn1">菜单</a>
+			<a href="SE.html" class="top-btn top-btn2">搜索</a>
+		</header>
+		<!--顶部菜单-->
+		<div class="top-menu-box">
+			<div class="top-menu-bg"></div>
+			<div class="top-menu">
+				<ul class="top-menu-list">
+					<li>
+						<a href="index.html">
+							<i class="icon-index"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="book.html">
+							<i class="icon-collect"></i>
+							<span>收藏</span>
+						</a>
+					</li>
+					<li>
+						<a href="book.html">
+							<i class="icon-history"></i>
+							<span>历史</span>
+						</a>
+					</li>
+					<li>
+						<a href="classify.html">
+							<i class="icon-classify"></i>
+							<span>分类</span>
+						</a>
+					</li>
+					<li>
+						<a href="ranking.html">
+							<i class="icon-rank"></i>
+							<span>排行</span>
+						</a>
+					</li>
+					<li>
+						<a href="chaseUp.html">
+							<i class="icon-time"></i>
+							<span>追更</span>
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="home">个人中心</a>
+			</div>
+		</div>
+		<!--tab切换-->
+		<section class="ranking-tab-box">
+			<ul>
+				<li>
+					<a href="javascript:;">更新</a>
+				</li>
+				<li>
+					<a href="javascript:;">畅销</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="ranking-tab-box-active">人气</a>
+				</li>
+				<li>
+					<a href="javascript:;">月票</a>
+				</li>
+			</ul>
+		</section>
+		<!--切换象征图片-->
+		<section class="ranking-token">
+			<!--更新-->
+			<div class="rank-token-list rank-token-list1"></div>
+			<!--畅销-->
+			<div class="rank-token-list rank-token-list2"></div>
+			<!--人气-->
+			<div class="rank-token-list rank-token-list3  rank-token-list-active"></div>
+			<!--月票-->
+			<div class="rank-token-list rank-token-list4"></div>
+		</section>
+		<!--列表部分-->
+		<section class="rank-con-box">
+			<!--更新-->
+			<div class="rank-con-list rank-con-list1"><ul></ul></div>
+			<!--畅销-->
+			<div class="rank-con-list rank-con-list2"><ul></ul></div>
+			<!--人气-->
+			<div class="rank-con-list rank-con-list3 rank-con-list-active"><ul></ul></div>
+			<!--月票-->
+			<div class="rank-con-list rank-con-list4"><ul></ul></div>
+		</section>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/ranking.js" ></script>
+<script>
+	$(".ranking-tab-box a").on("touchend",function(e){
+		e.preventDefault();//阻止默认事件
+		$(".ranking-tab-box a").removeClass("ranking-tab-box-active");
+		$(this).addClass("ranking-tab-box-active");
+		
+		$(".rank-token-list").removeClass("rank-token-list-active");
+		$(".rank-token-list").eq($(".ranking-tab-box a").index($(this))).addClass("rank-token-list-active")
+	
+		$(".rank-con-list").removeClass("rank-con-list-active");
+		$(".rank-con-list").eq($(".ranking-tab-box a").index($(this))).addClass("rank-con-list-active")
+	});
+</script>

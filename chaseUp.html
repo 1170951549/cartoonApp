@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+		<title>追更</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/chaseUp.css" />
+	</head>
+	<body>
+		<!--最顶部-->
+		<header class="top-box">
+			<a href="javascript:history.go(-1)" class="top-fh"></a>
+			<h1>追更时间表</h1>
+			<a href="javascript:;" class="top-btn top-btn1">菜单</a>
+			<a href="SE.html" class="top-btn top-btn2">搜索</a>
+		</header>
+		<!--顶部菜单-->
+		<div class="top-menu-box">
+			<div class="top-menu-bg"></div>
+			<div class="top-menu">
+				<ul class="top-menu-list">
+					<li>
+						<a href="index.html">
+							<i class="icon-index"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="book.html">
+							<i class="icon-collect"></i>
+							<span>收藏</span>
+						</a>
+					</li>
+					<li>
+						<a href="book.html">
+							<i class="icon-history"></i>
+							<span>历史</span>
+						</a>
+					</li>
+					<li>
+						<a href="classify.html">
+							<i class="icon-classify"></i>
+							<span>分类</span>
+						</a>
+					</li>
+					<li>
+						<a href="ranking.html">
+							<i class="icon-rank"></i>
+							<span>排行</span>
+						</a>
+					</li>
+					<li>
+						<a href="chaseUp.html">
+							<i class="icon-time"></i>
+							<span>追更</span>
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="home">个人中心</a>
+			</div>
+		</div>
+		<!--星期切换-->
+		<section class="week-tab-box">
+				<ul>
+					<li>
+						<a href="javascript:;" class="week-tab-box-active">一</a>
+					</li>
+					<li>
+						<a href="javascript:;">二</a>
+					</li>
+					<li>
+						<a href="javascript:;">三</a>
+					</li>
+					<li>
+						<a href="javascript:;">四</a>
+					</li>
+					<li>
+						<a href="javascript:;">五</a>
+					</li>
+					<li>
+						<a href="javascript:;">六</a>
+					</li>
+					<li>
+						<a href="javascript:;">日</a>
+					</li>
+				</ul>
+		</section>
+		<section class="week-list-box">
+			<div class="week-list week-list1"><ul></ul></div>
+			<div class="week-list week-list2"><ul></ul></div>
+			<div class="week-list week-list3"><ul></ul></div>
+			<div class="week-list week-list4"><ul></ul></div>
+			<div class="week-list week-list5"><ul></ul></div>
+			<div class="week-list week-list6"><ul></ul></div>
+			<div class="week-list week-list7"><ul></ul></div>
+		</section>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/chaseUp.js" ></script>
+<script>
+	var tim = new Date();
+	var dates= tim.getDay();
+	$(".week-tab-box a").removeClass("week-tab-box-active");
+	$(".week-tab-box a").eq(dates-1).addClass("week-tab-box-active");
+	$(".week-list").hide();
+	$(".week-list").eq(dates-1).show();
+	
+	$(".week-tab-box a").on("touchend",function(e){
+		e.preventDefault();//阻止默认事件
+		$(".week-tab-box a").removeClass("week-tab-box-active");
+		$(this).addClass("week-tab-box-active");
+		$(".week-list").hide();
+		$(".week-list").eq($(".week-tab-box a").index($(this))).show();
+	})
+</script>
